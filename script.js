@@ -96,7 +96,8 @@ function handleGridClick() {
 // 유저 클릭 체크
 function checkUserSequence() {
   for (var i = 0; i < userSequence.length; i++) {
-    if (userSequence[i] !== sequence[i]) {      
+    if (userSequence[i] !== sequence[i]) {  
+      WrongSound.play();    
       return false;
     }
   }
@@ -106,7 +107,7 @@ function checkUserSequence() {
 
 // 게임종료 시 
 function endGame() {
-  WrongSound.play();
+  
   isGameActive = false;
   startButton.disabled = false;
   scoreDisplay.innerHTML = "Game Over! <br> Score: " + score;
