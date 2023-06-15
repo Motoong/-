@@ -46,6 +46,7 @@ function showSequence() {
         
         if (idx === sequence.length - 1) {
           enableGridClick();
+          scoreDisplay.innerHTML = "바뀐 순서대로 누르세요 !<br> Score: " + score;
         }
       }, 300);
     }, delay);
