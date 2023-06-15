@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>기억력 테스트 게임</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div id="scoreDisplay">기억력 테스트<br>Press START </div>
-    <div id="container">
-      <div class="grid-container">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-      </div>
+<head>
+  <title>휴먼 벤치마킹</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">Human Benchmark</a>
+  </header>
+  <h1 id="title">Human Benchmark</h1>
+  <div id="container">
+    <div class="menu-container">
+      <div class="menu" onclick="window.location.href = 'seqMemory/seqMem.html'">기억력 테스트</div>
+      <div class="menu">반응속도 테스트</div>
+      <div class="menu"></div>
+      <div class="menu"></div>
     </div>
-
-    <button id="startButton">START</button>
-
-    <script src="script.js"></script>
-  </body>
+  </div>
+</body>
 </html>
