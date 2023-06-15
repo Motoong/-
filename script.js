@@ -101,7 +101,7 @@ function checkUserSequence() {
       return false;
     }
   }
-  wrongSound.play();
+  effectSound.play();
   return true;
 }
 
