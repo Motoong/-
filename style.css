@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 
-.container {
+#container {
     width: 100%;
     height: 300px;
     margin: 20px auto;
@@ -12,7 +12,11 @@ body{
     align-items: center;
     justify-content: center;
   }
-  
+
+  #container.game-over {
+    background-color: rgb(180, 17, 17);
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
