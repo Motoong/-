@@ -10,7 +10,7 @@ var isGameActive = false;
 
 var effectSound = new Audio("sound/Blop Sound.mp3");
 var CorrectSound = new Audio("sound/Correct 2.mp3");
-var WorngSound = new Audio("sound/error 10.mp3");
+var WrongSound = new Audio("sound/error 10.mp3");
 
 // 시작버튼 
 startButton.addEventListener("click", function() {
@@ -106,7 +106,7 @@ function checkUserSequence() {
 
 // 게임종료 시 
 function endGame() {
-  WorngSound.play();
+  WrongSound.play();
   isGameActive = false;
   startButton.disabled = false;
   scoreDisplay.innerHTML = "Game Over! <br> Score: " + score;
