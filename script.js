@@ -101,13 +101,12 @@ function checkUserSequence() {
       return false;
     }
   }
-  effectSound.play();
+  WrongSound.play();
   return true;
 }
 
 // 게임종료 시 
 function endGame() {
-  
   isGameActive = false;
   startButton.disabled = false;
   scoreDisplay.innerHTML = "Game Over! <br> Score: " + score;
