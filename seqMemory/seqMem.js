@@ -8,9 +8,9 @@ var userSequence = [];
 var score = 0;
 var isGameActive = false;
 
-var effectSound = new Audio("sound/Blop Sound.mp3");
-var CorrectSound = new Audio("sound/Correct 2.mp3");
-var wrongSound = new Audio("sound/wrong.mp3");
+var effectSound = new Audio("../sound/Blop Sound.mp3");
+var CorrectSound = new Audio("../sound/Correct 2.mp3");
+var wrongSound = new Audio("../sound/wrong.mp3");
 
 // 시작버튼 
 startButton.addEventListener("click", function() {
